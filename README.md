@@ -1,2 +1,4 @@
 # Tailwind_tutorial
-Landing page and sections with Tailwind
+Tutorial from: 
+Tailwind CSS: pour concevoir des sites web modernes et uniques
+Author: S. Ausin
