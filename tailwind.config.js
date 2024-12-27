@@ -8,7 +8,7 @@ module.exports = {
         secondary:"#FBB217",
       },
       backgroundImage: {
-        "ardoise": "url('images/background-slate.jpg')", //trailing coma doest affect functionality but reduce error if new iten added to list
+        "ardoise": "url('images/background-slate.jpg')", //trailing coma doesn't affect functionality but reduces errors if new iten added to list.
       },
     },
   },
