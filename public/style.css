@@ -554,6 +554,14 @@ video {
   display: none;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, .arvo {
+  font-family: "Arvo", serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
