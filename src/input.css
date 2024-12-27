@@ -9,3 +9,9 @@ h1, h2, h3, h4, .arvo {
     font-family: "Arvo", serif;
     }
 }
+
+@layer components {
+    .btn-lg {
+        @apply text-white bg-primary text-2xl px-5 py-3 rounded-xl hover:bg-secondary hover:text-primary transition duration-300 ease-in-out;
+    }
+}
