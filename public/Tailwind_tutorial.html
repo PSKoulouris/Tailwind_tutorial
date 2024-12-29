@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <!--Links to icons from fontawesome via CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
@@ -90,10 +92,79 @@
                         <button class= "text-white bg-primary text-lg px-4 py-2 rounded-lg" type="submit">Inscription</button> 
                 </form>
         </section>
-        <!--part5: Section Testimony-->
-        <section>
 
+        <!--part 5: Section Testimony-->
+        <section class="p-5">
+            <h2>Nos Clients Témoignent</h2>
+
+            <!--Container for Grid layout-->
+            <div class="mt-5 container mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 ">
+                    
+                    <!--Témoignage 1-->
+                    <div class="text-center">
+                            <img class="frame" src="images/avatar1.jpg" alt="avatar1">
+                            <h3> Ella Deutranche</h3>
+                            <p>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <p class="text-justify mt-3"> 
+                            J'aime beaucoup Rapido Burger, c'est un vrai plaisir de manger des hamburgers de qualité. Les prix sont abordable et les burgers sont bien faits. Je recommande vivement Rapido Burger!
+                            </p>
+                    </div>
+                    <!--Témoignage 2-->
+                    <div class="text-center">
+                        <!-- class="frame" defined as component in src/input.css-->
+                            <img class="frame" src="images/avatar2.jpg" alt="avatar2">
+                        <!-- h3 defined in src/input.css-->
+                            <h3> Lambert GOER </h3>
+                            <p>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                            </p>
+                            <p class="text-justify mt-3"> 
+                                Le meilleur burger que j’aie jamais goûté ! Le steak était parfaitement juteux, le pain moelleux mais solide, et les garnitures fraîches et savoureuses. Chaque bouchée était un mélange harmonieux de saveurs fumées, salées et acidulées. Un véritable chef-d'œuvre dans le monde des burgers !
+                            </p>
+                    </div>
+                  <!--Témoignage 3-->
+                    <div class="text-center">
+                            <img class="frame" src="images/avatar3.jpg" alt="avatar3">
+                            <h3> Eva DEVORET</h3>
+                            <p>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <p class="text-justify mt-3"> 
+                                Ce burger était tout simplement exceptionnel! Un pain tendre, une viande savoureuse et cuite à la perfection, accompagnés de garnitures fraîches et généreuses. Chaque bouchée était un pur délice, un équilibre parfait entre textures et saveurs. Une expérience à ne pas manquer !
+                            </p>
+                    </div>
+                    <!--Témoignage 4-->
+                    <div class="text-center">
+                            <img class="frame" src="images/avatar4.jpg" alt="avatar4">
+                            <h3> Jean REVEU</h3>
+                            <p>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+                            </p>
+                            <p class="text-justify mt-3"> 
+                                Un burger incroyable! Le pain était doré et léger, la viande fondante et pleine de saveur, avec des ingrédients frais qui ajoutaient une touche parfaite. Une explosion de goût à chaque bouchée, je reviendrai sans hésiter.
+                            </p>
+                    </div>
+            </div>
         </section>
+
         <!--part6: footer-->
         <footer>
         
