@@ -1,109 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind_tutorial</title>
-    <!--fonts Lato and Arvo from fonts.google.com.
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind_tutorial</title>
+        <!--fonts Lato and Arvo from fonts.google.com.
         Regular and Bold versionfor titles and body text-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-
-<link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
     
-   <!-- Hero section and navigation bar-->
-    <section class="bg-ardoise bg-cover bg-center p-5">
-        <!-- Part1: Header and navigation -->
-        <header>
-            <div class="container mx-auto flex flex-col items-center space-y-6 md:flex-row md:justify-between md:space-y-0">
-                    <div>
-                            <a href="index.html">
-                                <img src="images/logo.png" alt="logo">
-                            </a>
-                    </div>
-                    <div>
+        <!-- Hero section and navigation bar-->
+        <section class="bg-ardoise bg-cover bg-center p-5">
+                <!-- Part1: Header and navigation -->
+                <header>
+                        <div class="container mx-auto flex flex-col items-center space-y-6 md:flex-row md:justify-between md:space-y-0">
+                            <div>
+                                    <a href="index.html">
+                                        <img src="images/logo.png" alt="logo">
+                                    </a>
+                            </div>
+                            <div>
                         <!-- md: responsive layout for screens MeDium with screen size > 768px   -->
-                        <ul class="arvo text-white text-lg uppercase font-bold space-y-2 md:flex md:space-x-6 md:space-y-0">
-                            <li>
-                                <a class="transition duration-300 ease-in-out hover:text-secondary" href="#">Menu</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-secondary transition duration-300 ease-in-out" href="#">Nos Restaurants</a>
-                            </li>
-                            <li>
-                                <a class ="hover:text-secondary transition duration-300 ease-in-out" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
-        </header>
-<!-- Part2: Hero content in Section1-->
-        <div class="container mx_auto flex flex-col space-y-10 md:flex-row md:py-16">
-                <div class="flex flex-col items-center justify-center space-y-10 order-2 md:order-1">
-                    <!-- Text center to align Rapido Burger in center in small screen mode-->
-                        <h1 class="text-white text-7xl font-bold text-center">Rapido Burger</h1>
-                        <p class="text-secondary text-7xl font-bold">8,90 $</p>
-                        <a class="btn-lg" href="#">Commander
-                        </a>
+                                <ul class="arvo text-white text-lg uppercase font-bold space-y-2 md:flex md:space-x-6 md:space-y-0">
+                                    <li>
+                                            <a class="transition duration-300 ease-in-out hover:text-secondary" href="#">Menu</a>
+                                    </li>
+                                    <li>
+                                            <a class="hover:text-secondary transition duration-300 ease-in-out" href="#">Nos Restaurants</a>
+                                    </li>
+                                    <li>
+                                            <a class ="hover:text-secondary transition duration-300 ease-in-out" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </header>
+                <!-- Part2: Hero content in Section1-->
+                <div class="container mx_auto flex flex-col space-y-10 md:flex-row md:py-16">
+                        <div class="flex flex-col items-center justify-center space-y-10 order-2 md:order-1">
+                        <!-- Text center to align Rapido Burger in center in small screen mode-->
+                                <h1 class="text-white text-7xl font-bold text-center">Rapido Burger</h1>
+                                <p class="text-secondary text-7xl font-bold">8,90 $</p>
+                                <a class="btn-lg" href="#">Commander</a>
+                        </div>
+                        <div class="order-1 md:order-2">
+                                <img src="images/rapido-burger.png" alt="rapido-burger">
+                        </div>
                 </div>
-                <div class="order-1 md:order-2">
-                        <img src="images/rapido-burger.png" alt="rapido-burger">
+        </section>
+
+        <!-- Part3: Section menu-->
+        <section class="p-5">
+                <h2>Nos Suggestions</h2>
+                <div class=" container mx-auto space-y-10
+                    lg:space-y-0 lg:flex lg:space-x-10">
+                        <div class="text-center lg:w-1/3">
+                                <img class="mx-auto" src="images/classic-burger.jpg" alt="Classic Burger">
+                                <h3 class="bg-primary text-3xl font-bold text-white inline-block px-3 py-2 rounded-xl mb-5"> Classic Burger</h3>
+                                <p class="text-justify">Croquez dans l'essence même du réconfort avec notre Burger Classique. Préparé avec un steak juteux et savamment assaisonné, il est garni de laitue croquante, de tomates fraîches, de fromage fondant et de notre sauce maison savoureuse, le tout dans un pain moelleux et légèrement grillé. Accompagnez-le de frites dorées et d'une boisson fraîche pour un repas parfait à chaque bouchée. Laissez-vous tenter par la simplicité maîtrisée—découvrez le Burger Classique dès aujourd'hui!</p>
+                                <p class="text-primary font-bold text-6xl py-5"> 6.90 $ </p>
+                        </div>
+
+                        <div class="text-center lg:w-1/3">
+                                <img class="mx-auto" src="images/supreme-burger.jpg" alt="Supreme Burger">
+                                <h3 class="bg-primary inline-block text-3xl text-white font-bold rounded-xl py-2 px-3 mb-5"> Suprême Burger</h3>
+                                <p class="text-justify">Découvrez le summum de la gourmandise avec notre Burger Suprême. Un steak généreux et juteux, accompagné de fromage fondant, de bacon croustillant, d'oignons caramélisés et de notre sauce spéciale irrésistible, le tout dans un pain brioché doré. Chaque bouchée est une explosion de saveurs riches et savamment équilibrées. Offrez-vous un moment d'exception—essayez le Burger Suprême dès aujourd'hui!</p>
+                                <p class="text-6xl text-primary font-bold py-5"> 7.90 $ </p>
+                        </div>
+
+                        <div class="text-center lg:w-1/3">
+                                <img class="mx-auto" src="images/kingdom-burger.jpg" alt="Kingdom Burger">
+                                <h3 class="bg-primary inline-block text-white text-3xl font-bold rounded-xl py-2 px-3 mb-5"> Kingdom Burger</h3>
+                                <p class="text-justify">Entrez dans un royaume de saveurs avec notre Burger Kingdom. Un steak tendre et juteux, couronné de fromage premium, de bacon fumé, d'oignons croustillants, et de notre sauce royale secrète, le tout dans un pain brioché moelleux et doré. Chaque bouchée est un festin digne de rois et reines. Régalez-vous avec le Burger Kingdom dès aujourd'hui et savourez la grandeur!</p>
+                                <p class="text-6xl text-primary font-bold py-5"> 8.90 $ </p>
+                        </div>
                 </div>
-        </div>
-    </section>
+        </section>
 
-<!-- Part3: Section menu-->
-    <section class="p-5">
-        <h2>Nos Suggestions</h2>
-        <div class=" container mx-auto space-y-10
-        lg:space-y-0 lg:flex lg:space-x-10">
-                <div class="text-center lg:w-1/3">
-                        <img class="mx-auto" src="images/classic-burger.jpg" alt="Classic Burger">
+        <!--part4:Section Newsletter with Form-->
+        <section class="bg-secondary px-5 pt-2 pb-8">
+                <h2>Inscrivez-vous à notre newsletter</h2>
+                <form class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-5 md:justify-center" action="#">
+                        <input class="p-2 rounded-md" type="text" name="name" id="name" placeholder="nom">
+                        <input class="p-2 rounded-md" type="email" name="email" id="email" placeholder="email@mail.com">
+                        <button class= "text-white bg-primary text-lg px-4 py-2 rounded-lg" type="submit">Inscription</button> 
+                </form>
+        </section>
+        <!--part5: Section Testimony-->
+        <section>
 
-                        <h3 class="bg-primary text-3xl font-bold text-white inline-block px-3 py-2 rounded-xl mb-5"> Classic Burger</h3>
-
-                        <p class="text-justify">Croquez dans l'essence même du réconfort avec notre Burger Classique. Préparé avec un steak juteux et savamment assaisonné, il est garni de laitue croquante, de tomates fraîches, de fromage fondant et de notre sauce maison savoureuse, le tout dans un pain moelleux et légèrement grillé. Accompagnez-le de frites dorées et d'une boisson fraîche pour un repas parfait à chaque bouchée. Laissez-vous tenter par la simplicité maîtrisée—découvrez le Burger Classique dès aujourd'hui!</p>
-
-                        <p class="text-primary font-bold text-6xl py-5"> 6.90 $ </p>
-                </div>
-
-                <div class="text-center lg:w-1/3">
-                        <img class="mx-auto" src="images/supreme-burger.jpg" alt="Supreme Burger">
-
-                        <h3 class="bg-primary inline-block text-3xl text-white font-bold rounded-xl py-2 px-3 mb-5"> Suprême Burger</h3>
-
-                        <p class="text-justify">Découvrez le summum de la gourmandise avec notre Burger Suprême. Un steak généreux et juteux, accompagné de fromage fondant, de bacon croustillant, d'oignons caramélisés et de notre sauce spéciale irrésistible, le tout dans un pain brioché doré. Chaque bouchée est une explosion de saveurs riches et savamment équilibrées. Offrez-vous un moment d'exception—essayez le Burger Suprême dès aujourd'hui!</p>
-
-                        <p class="text-6xl text-primary font-bold py-5"> 7.90 $ </p>
-                </div>
-
-                <div class="text-center lg:w-1/3">
-                        <img class="mx-auto" src="images/kingdom-burger.jpg" alt="Kingdom Burger">
-
-                        <h3 class="bg-primary inline-block text-white text-3xl font-bold rounded-xl py-2 px-3 mb-5"> Kingdom Burger</h3>
-
-                        <p class="text-justify">Entrez dans un royaume de saveurs avec notre Burger Kingdom. Un steak tendre et juteux, couronné de fromage premium, de bacon fumé, d'oignons croustillants, et de notre sauce royale secrète, le tout dans un pain brioché moelleux et doré. Chaque bouchée est un festin digne de rois et reines. Régalez-vous avec le Burger Kingdom dès aujourd'hui et savourez la grandeur!</p>
-
-                        <p class="text-6xl text-primary font-bold py-5"> 8.90 $ </p>
-                </div>
-        </div>
-    </section>
-
-<!--part4:Section Newsletter-->
-    <section>
-
-    </section>
-<!--part5: Section Testimony-->
-    <section>
-
-    </section>
-<!--part6: footer-->
-    <footer>
+        </section>
+        <!--part6: footer-->
+        <footer>
         
-    </footer>
+        </footer>
     
 </body>
 </html>
